@@ -11,11 +11,13 @@
   </engines>
   <preference name="largeheap" default="true"/>
   <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+    <edit-config file="AndroidManifest.xml" 
+		 target="/manifest/application" 
+		 mode="merge">
       <manifest xmlns:tools="http://schemas.android.com/tools"/>
     </edit-config>
     <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-     <application android:largeHeap="true">
+     <application android:largeHeap="true"/>
     </edit-config>
   </platform>
 </plugin>
