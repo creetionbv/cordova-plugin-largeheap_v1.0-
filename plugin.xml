@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cordova-plugin-largeheap_v1.0-" version="0.0.2">
-  <name>cordova-plugin-largeheap_v1.0-</name>
-  <description>
-		Sets the largeheap setting on 'true'
-	</description>
-  <license>MIT</license>
-  <engines>
-    <engine name="cordova" version=">=6.4.0"/>
-    <engine name="cordova-android" version=">=6.0.0"/>
-  </engines>
-  <preference name="largeheap" default="true"/>
+<name>cordova-plugin-largeheap_v1.0-</name>
   <platform name="android">
     <edit-config file="AndroidManifest.xml" 
 		 target="/manifest/application" 
@@ -17,4 +7,3 @@
      <application android:largeHeap="true"/>
     </edit-config>
   </platform>
-</plugin>
